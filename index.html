@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Instagram Canbra</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Iconos Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+</head>
+
+<body>
+    <nav class="navbar bg-light">
+        <div class="container-fluid px-5">
+            <a class="navbar-brand" href="#"><img src="./img/Recurso 2@2x.png" alt="" width="40%" height="40%" /></a>
+            <!-- modal boton --> 
+            <div class="menus d-flex gap-4 ">           
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Create a new post</button>              
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Crete a new post</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <label for="recipient-name" class="col-form-label">Caption:</label>
+                                <textarea class="form-control" id="message-text"
+                                    placeholder="Add the caption of your post"></textarea>
+                            </div>
+                            <div class="iconos p-3">
+                                <button type="button" class="btn btn-outline-secondary"> <i class="bi bi-camera"></i></button>
+                                <button type="button" class="btn btn-outline-secondary"> <i class="bi bi-geo-alt-fill"></i></button>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-success">Publish</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>              
+                <div class="dropdown">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                        <i class="bi bi-gear-fill"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="dropdownMenu2" >
+                    <li><button class="dropdown-item" type="button">Profile</button></li>
+                    <li><button class="dropdown-item" type="button">Accesibility</button></li>
+                    <li><button class="dropdown-item" type="button">Privacy and Data</button></li>
+                    <hr>
+                    <li><button class="dropdown-item text-danger" type="button">Log out</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <header> 
+        <div class="container-fluid d-flex flex-column align-items-center justify-content-evenly py-3">
+            <ul class="nav nav-pills mb-3 " id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link " id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i class="bi bi-grid-3x3"></i></button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><i class="bi bi-square-fill"></i></button>
+                </li>                 
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane float-md-end" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">                    
+                    <div class="container-fluid">
+                        <div class="row my-4">
+                            <div class="col-12 col-sm-4 col-lg-4"> <img src="https://picsum.photos/500/501" class="card-img-top" alt="foto post"></div>
+                            <div class="col-12 col-sm-4 col-lg-4"> <img src="https://picsum.photos/500/500" class="card-img-top" alt="foto post"></div>
+                            <div class="col-12 col-sm-4 col-lg-4"> <img src="https://picsum.photos/500/502" class="card-img-top" alt="foto post"></div>                        
+                        </div>  
+                        <div class="row my-4">
+                            <div class="col-12 col-sm-4 col-lg-4"> <img src="https://picsum.photos/499/501" class="card-img-top" alt="foto post"></div>
+                            <div class="col-12 col-sm-4 col-lg-4"> <img src="https://picsum.photos/498/500" class="card-img-top" alt="foto post"></div>
+                            <div class="col-12 col-sm-4 col-lg-4"> <img src="https://picsum.photos/497/502" class="card-img-top" alt="foto post"></div>                        
+                        </div> 
+                        <div class="row my-4">
+                            <div class="col-12 col-sm-4 col-lg-4"> <img src="https://picsum.photos/501/501" class="card-img-top" alt="foto post"></div>
+                            <div class="col-12 col-sm-4 col-lg-4"> <img src="https://picsum.photos/502/500" class="card-img-top" alt="foto post"></div>
+                            <div class="col-12 col-sm-4 col-lg-4"> <img src="https://picsum.photos/503/502" class="card-img-top" alt="foto post"></div>                        
+                        </div>                     
+                    </div>
+                </div>
+                <div class="tab-pane fade show active " id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                    <div class="timeline d-flex flex-column gap-4">
+                        <div class="card" style="width: 28rem;">
+                            <div class="card-header d-flex justify-content-between align-items-center py-1 ">
+                                <h5 class="fs-5">Discovery the life</h5>
+                                <p><small>01/10</small></p>
+                            </div>
+                            <img src="https://picsum.photos/400/251" class="card-img-top" alt="foto post">
+                            <div class="card-body">
+                                <p class="card-text fw-bold ">285 likes</p>
+                                <p class="card-text "><small> Some quick example text to build on the card title and make up the bulk of the card's content.</small></p>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 28rem;">
+                            <div class="card-header d-flex justify-content-between align-items-center py-1 ">
+                                <h5 class="fs-5">Freedom</h5>
+                                <p><small>02/10</small></p>
+                            </div>
+                            <img src="https://picsum.photos/400/250" class="card-img-top" alt="foto post">
+                            <div class="card-body">
+                                <p class="card-text fw-bold ">285 likes</p>
+                                <p class="card-text "><small> Some quick example text to build on the card title and make up the bulk of the card's content.</small></p>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 28rem;">
+                            <div class="card-header d-flex justify-content-between align-items-center py-1 ">
+                                <h5 class="fs-5">Enjoy the life</h5>
+                                <p><small>03/10</small></p>
+                            </div>
+                            <img src="https://picsum.photos/200/300" class="card-img-top" alt="foto post">
+                            <div class="card-body">
+                                <p class="card-text fw-bold ">285 likes</p>
+                                <p class="card-text "><small> Some quick example text to build on the card title and make up the bulk of the card's content.</small></p>
+                            </div>
+                        </div>
+                       
+                    </div> 
+                </div>
+                
+            </div>
+        </div>
+    </header>   
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
